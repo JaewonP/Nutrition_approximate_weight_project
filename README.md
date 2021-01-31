@@ -11,7 +11,6 @@
 ![추가](https://user-images.githubusercontent.com/63588838/106379251-fb554300-63ed-11eb-9658-13bb8453ddf8.JPG)  
 * 검색용  
 ![검색](https://user-images.githubusercontent.com/63588838/106379239-db258400-63ed-11eb-8282-a4d24d51e899.JPG)
-[more screenshots](https://github.com/JaewonP/Nutrition_approximate_weight_project/issues/1)
 <br/>
 <br/>
 
@@ -48,14 +47,8 @@
 
 ## 📌 How to start the api
 아래의 주소를 클릭하면 접근이 가능합니다. 
-
-
 > <http://52.78.28.86:8080/nut/search>
 * 주의사항 : 검색용 사이트입니다. db 데이터 추가용 사이트는 공개하지 않습니다.   
-<br/>
-
-## 📑 More information
-### Project Work Place 
 <br/>
 
 ## 📧 Contact
