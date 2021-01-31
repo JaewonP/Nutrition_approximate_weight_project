@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nutirition.mapper.NutritionMapper">
+	
+	<select id="AllList" resultType="com.nutirition.dao.NuTbl">
+		select * from fegie order by bno desc
+	</select>
+	
+	<select id="itemlist" resultType="com.nutirition.dao.NuTbl">
+		select * from fegie where fegie_name = #{fegie_name}
+	</select>
+	
+	<select id="itemEach" resultType="com.nutirition.dao.NuTbl">
+		select * from fegie where fegie_name = #{fegie_name} and amount_name = #{amount_name} and amount = #{amount}
+	</select>
+	
+	<select id="getType" resultType="com.nutirition.dao.NuTbl">
+		select amount_name from fegie group by amount_name
+	</select>
+	
+	<insert id="itemAdd">
+		insert into fegie (fegie_name, amount, amount_name, weight) values (#{fegie_name}, #{amount}, #{amount_name}, #{weight}) 
+	</insert>
+	
+	<delete id="itemDelete">
+		delete from fegie where bno = #{bno}
+	</delete>
+	
+</mapper>
